@@ -15,5 +15,14 @@
     "writefile": "^0.2.8",
     "yargs": "^17.3.1"
   },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alshimaasheta/first-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alshimaasheta/first-app/issues"
+  },
+  "homepage": "https://github.com/Alshimaasheta/first-app#readme",
   "description": ""
 }

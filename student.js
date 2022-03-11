@@ -29,12 +29,12 @@ const add= loadadd()
 
 const loadadd= () =>{
     
-    try{
+     try{
 
-fs.writeFileSync('info.txt')
-    console.log(fs.readFileSync('info.txt').toString )
+// fs.writeFileSync('info.json')
+//     console.log(fs.readFileSync('info.json').toString )
 
-    const dataBuffer = fs.writeFileSync('student.json')
+//     const dataBuffer = fs.writeFileSync('student.json')
     
     return JSON.parse(dataBuffer) 
     }
@@ -52,7 +52,7 @@ const saveadd = (student) =>{
 
 //delete
 const deletestudent=(_deleted)=>{
-    const deleted =loaddelete()
+    const notes =loaddelete()
     const addtokeep=notes.filter((obj)=>{
         return id!==id
     })

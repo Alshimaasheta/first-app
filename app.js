@@ -1,6 +1,9 @@
 const yargs=require('yargs')
 
-const student=require("./student.js")
+const student=require("./student")
+
+
+// console.log(fs.writefilesync('for.json'))
 yargs.command({
     command:'add',
     describe:'result',
