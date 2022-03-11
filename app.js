@@ -7,7 +7,7 @@ yargs.command({
     builder:{
         name:{
             describe:'enter your name',
-            // demandOption:true,
+            demandOption:true,
             type:'string'
         },
         id:{
@@ -28,8 +28,6 @@ yargs.command({
         
 },
 handler:(x)=>{
-    
-//   notes.addNote(x.name,x.id)
 console.log(x)
  
 }
@@ -42,16 +40,14 @@ yargs.command({
     builder:{
     
         
-        comment:{
+        id:{
             describe:'your degree delete',
             demandOption:true,
-            type: 'string'
+            type: 'number'
         }
         
 },
 handler:(x)=>{
-    
-//   notes.addNote(x.name,x.id)
 console.log(x)
  
 }
@@ -63,7 +59,7 @@ yargs.command({
     builder:{
         name:{
             describe:'enter your name',
-            // demandOption:true,
+            demandOption:true,
             type:'string'
         },
         degree:{
@@ -75,7 +71,6 @@ yargs.command({
 },
 handler:(x)=>{
     
-//   notes.addNote(x.name,x.id)
 console.log(x)
  
 }
@@ -99,8 +94,6 @@ yargs.command({
         
 },
 handler:(x)=>{
-    
-//   notes.addNote(x.name,x.id)
 console.log(x)
  
 }

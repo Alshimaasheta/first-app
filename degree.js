@@ -5,7 +5,7 @@ const eng=12
 const math=12
 
 // function sum
-const sum = (x,y) =>{
+const sum = (x,y,z) =>{
     return x+y+z
 }
 

@@ -1,5 +1,10 @@
 const fs=require('fs')
 
+// const saveData = JSON.stringify(notes)
+    
+// fs.writeFileSync('student.json',saveData)
+    // fs.writeFileSync('student.json')
+
 const add=(Name,id,Comment,degree)=>{
 const add= loadadd() 
     const duplicateName=add.filter((obj)=>{
@@ -38,9 +43,9 @@ fs.writeFileSync('info.txt')
     }
 }
 
-const saveadd = (notes) =>{
+const saveadd = (student) =>{
 
-    const saveData = JSON.stringify(notes)
+    const saveData = JSON.stringify(student)
     
     fs.writeFileSync('student.json',saveData)
 }
@@ -49,11 +54,11 @@ const saveadd = (notes) =>{
 const deletestudent=(_deleted)=>{
     const deleted =loaddelete()
     const addtokeep=notes.filter((obj)=>{
-        return Name!==Name
+        return id!==id
     })
     console.log(addtokeep)
     saveadd(addtokeep)
-    console.log(' deletd adegree ')
+    // console.log(' deletd adegree ')
 
 }
 // readNotes
